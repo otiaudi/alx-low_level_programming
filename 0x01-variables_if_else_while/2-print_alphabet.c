@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
- * main - Print alphabetical letters
+ * main - Prints the alphabet.
  *
- * Description: using the main function
- *
- * Rturn: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
