@@ -20,4 +20,3 @@ int i = 0, n = 0;
 
 	return (n);
 }
-}
