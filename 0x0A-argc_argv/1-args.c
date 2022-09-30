@@ -1,4 +1,4 @@
-#include <sdio.h>
+#include<stdio.h>
 
 /**
  * main - Prints the number of arguments passed to it.
