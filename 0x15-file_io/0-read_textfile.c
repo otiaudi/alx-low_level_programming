@@ -17,27 +17,27 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;				/*file descriptor*/
-	char *buf;			/*buffer where read data is stored*/
-	int nrd;			/* variabel to hold newly read characters*/
-	int nwr;			/* variable to store output */
+	ssize_t fd;			/*file descriptor*/
+	char  *buf;			/*buffer where read data is stored*/
+	ssize_t nrd;			/* variabel to hold newly read characters*/
+	ssize_t nwr;			/* variable to store output */
 
 	if (!filename)			/*if filename is null*/
 		return (0);
 
-	fd = open("filename", O_RDONLY);
+	fd = open(filename, O_RDONLY);
+
 	if (fd == -1)
 		return (0);
 
 	/*allocate memory to the buf */
 
 	buf = malloc(sizeof(char) * letters);
-	if (buf == NULL)
+	if (!buf)
 		return (0);
 
-	buf[letters] = '\0';
 	nrd = read(fd, buf, letters);
-	nwr = write(fd, buf, nrd);
+	nwr = write(STDOUT_FILENO, buf, nrd);
 
 	close(fd);
 
