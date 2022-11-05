@@ -27,7 +27,8 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = " ";
 
-	for (count = 0; count < text_content[count]; count++)
+	for (count = 0; text_content[count]; count++)
+		;
 		nwr = write(file1, text_content, count);
 	if (nwr == -1)
 		return (-1);
