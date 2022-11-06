@@ -1,6 +1,10 @@
 #include "main.h"
-* not_close - prints error.
+
+/**
+ * not_close - prints error.
+ *
  * @fd: value to print.
+ *
  */
 
 void not_close(int fd)
