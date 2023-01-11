@@ -8,9 +8,9 @@
 </body>
 </html>
 
-#0x1A. C - Hash tables
+# 0x1A. C - Hash tables
 
-#Learning Objectives
+# Learning Objectives
 - What is a hash function
 - What makes a good hash function
 - What is a hash table, how do they work and how to use them
@@ -18,7 +18,7 @@
 - What are the advantages and drawbacks of using hash tables
 - What are the most common use cases of hash tables
 
-#Requirements
+# Requirements
 - Allowed editors: vi, vim, emacs
 - All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 - All your files should end with a new line
@@ -32,7 +32,7 @@
 - All your header files should be include guarded
 
 
-#Data Structures
+# Data Structures
 ##Please use these data structures for this project:
 
 /**
