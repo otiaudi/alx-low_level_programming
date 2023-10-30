@@ -1,0 +1,28 @@
+# Compiler and compiler flags
+CC=gcc
+CFLAGS=-Wall -Werror -Wextra -pedantic
+
+# Source files
+SRC=main.c school.c
+
+# Derive object file names from source files
+OBJ=$(SRC:%.c=%.o)
+
+
+# Executable name
+NAME=school
+
+# Command for removing files
+RM=rm -f
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
