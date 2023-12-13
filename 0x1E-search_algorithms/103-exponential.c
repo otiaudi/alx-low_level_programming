@@ -10,7 +10,7 @@
  * @value: value to search in
  * Return: index of the number
  */
-int recursive_search(int *array, size_t size, int value)
+int exponential_search(int *array, size_t size, int value)
 {
 	size_t half = size / 2;
 	size_t i;
